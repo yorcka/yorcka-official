@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Yorcka</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#band1" class="w3-bar-item w3-button w3-padding-large w3-hide-small"></a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#playlist" class="w3-bar-item w3-button">PLAYLIST</a>
+            <a href="#" class="w3-bar-item w3-button"></a>
+            <a href="#" class="w3-bar-item w3-button"></a>
+        </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+    <a href="#playlist" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PLAYLIST</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://scontent.fnsi1-1.fna.fbcdn.net/v/t1.18169-9/28471786_2092037374362851_8011376147447672235_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=Rn8FDEwuLIwAX_NkZ-m&_nc_ht=scontent.fnsi1-1.fna&oh=479cecdcad821a72bb49aadf93b240ee&oe=617B93E2" style="width:50%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Obala</h3>
+        <p><b>During the 11th February!</b></p>   
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://scontent.fnsi1-1.fna.fbcdn.net/v/t1.6435-9/37543082_2212229812343606_2700362409918332928_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=UzXegm1doWEAX8x1Kt4&_nc_ht=scontent.fnsi1-1.fna&oh=1f155f61aecb262b90a7dd84799ea8e0&oe=617D4EE3" style="width:50%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Safari Night Club</h3>
+        <p><b>The atmosphere is lorem ipsum.</b></p>    
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://scontent.fnsi1-1.fna.fbcdn.net/v/t1.6435-9/35266255_2147152372184684_1465250233586810880_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=mnwhUqTYzR8AX8ZYd4C&_nc_ht=scontent.fnsi1-1.fna&oh=2eec0f8b39cc509c26c8fae4d1dc4ce6&oe=617BF45D" style="width:50%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Carossel</h3>
+        <p><b>Thank you,A night we won't forget.</b></p>    
+        </div>
+       
+        <!-- <div class="mySlides w3-display-container w3-center">
+            <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Chicago</h3>
+            <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+            </div> -->
+    </div>
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+        <!-- <h2 class="w3-wide">ABOUT YORCKA</h2>
+        <p class="w3-opacity"><i>CEO of Dogs Barks Music</i></p>
+        <p class="w3-justify"> </p> -->
+
+        <head>
+            <title>About Yorcka</title>
+        
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+        <body>
+        
+            <!-- Site Header -->
+            <header>
+                <!-- h1: The most important headline (only one allowed per page by W3C standards) -->
+                <h1></h1>
+            </header>
+        
+            <div class="container">
+                <!-- Section 1: Biography -->
+                <section id="main-bio">
+                    <!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
+                    <h2>YORCKA</h2>
+        
+                    <!-- Paragraph with embedded link -->
+                    <h3>Web Developer / Musician</h3>
+                    <p>
+                        Yorcka is a freelancer web developer and independent musician. Being a linux administrator, he contributed in the development of multiple sites. As a musician he is the authour of multiple tubes like <a href="https://youtu.be/ar9wHAToMKE">FAUT PAS ME LAISSER</a>, <a href="https://youtu.be/dYe3ldZQGCE?t=2">True Love</a> and much more.
+                    </p>
+                </section>
+        
+            </div>
+        
+        </body>
+
+        <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+            <p></p>
+            <img src="https://scontent.fnsi1-1.fna.fbcdn.net/v/t1.6435-9/120529164_2817808025119112_6166410582201444097_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zxIj3-dd5xEAX-FdFSo&_nc_ht=scontent.fnsi1-1.fna&oh=79f3b00a70ee8ce445f45e213037283a&oe=617C379D" class="w3-round w3-centre-center" alt="Yorcka" style="width:250%">
+        </div>
+        <!-- <div class="w3-third">
+            <p>teacher's pic</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <p>students' pic</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+        </div> -->
+        </div>
+
+    </div>
+
+    <!-- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band1">
+        <h2 class="w3-wide">GENIUS PRIMARY</h2>
+        <p class="w3-opacity"><i>moto(eg peace work fatherland)</i></p>
+        <p class="w3-justify"> brief history about the school</p>
+
+        <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+            <p>school's pic</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <p>teacher's pic</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <p>students' pic</p>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+        </div>
+        </div> -->
+        
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-black" id="playlist">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">My Playlist</h2>
+        <p class="w3-opacity w3-center"><i>follow the link and subscribe to my channel</i></p><br>
+
+        <!-- <ul class="w3-ul w3-border w3-white w3-text-grey">
+            <li class="w3-padding">College Uniform<span class="w3-tag w3-red w3-margin-left">price</span></li>
+            <li class="w3-padding">College Pull-Over <span class="w3-tag w3-red w3-margin-left">price</span></li>
+            <li class="w3-padding">Primary Uniform <span class="w3-tag w3-red w3-margin-left">price</span></li>
+             <li class="w3-padding">Primary Uniform <span class="w3-badge w3-right w3-margin-right">price</span></li> 
+        </ul> -->
+
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTkG__NeBf38EkcDkzud5Jwr_s05e6PX5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- <div class="w3-third w3-margin-bottom">
+             <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity"> 
+            <div class="w3-container w3-white">
+                <p><b>pic</b></p>
+                <p class="w3-opacity">name</p>
+                <p>Price</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy</button>
+            </div>
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal w3-center w3-padding-32"> 
+            <span onclick="document.getElementById('ticketModal').style.display='none'" 
+        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        </header>
+        <div class="w3-container">
+            <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="How many?">
+            <p><label><i class="fa fa-user"></i> Send To</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="Enter email">
+            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+            <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </div>
+        </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>For any reservation or comment email me</i></p>
+        <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Yaounde, Cameroon<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +237 656 717 370 <br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: melinguivictoire@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    
+    <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="https://s.rfi.fr/media/display/d95ee564-fdac-11ea-9d9d-005056bf87d6/000_1mh9lv_0.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">All copy rights reserved<a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+    </footer>
+
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    </script>
+
+    </body>
+</html>
